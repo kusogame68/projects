@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<META http-equiv='Content-Type' content='text/html ; charset=utf-8'>
+		<title> 修改update </title>
+	</head>
+	<body>
+		<h2>請輸入要更改的鍵，再輸入值的變更!</h2>
+		<form action="{% url 'updatedata'%}" method='GET'>
+		<p>鍵 : <input type='text' name='key'></p>
+		<p>值 : <input type='text' name='val'></p>
+		<input type="submit" ><br>
+		
+		<hr size='4px' width='100%' color='blue'>
+	
+		<a href="{% url 'index'%}">目錄</a><br>
+		
+	</body>
+</html>

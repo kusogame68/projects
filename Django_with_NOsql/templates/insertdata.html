@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<META http-equiv='Content-Type' content='text/html ; charset=utf-8'>
+		<title> success </title>
+	</head>
+	<body>
+
+		<h1>mydict={ {{key}}:{{val}} }</h1>
+		<h2>新增成功!</h2>
+		<hr size='4px' width='100%' color='blue'>
+		
+		<a href="{% url 'index'%}">目錄</a><br>
+		<a href="{% url 'insert' %}">繼續新增</a><br>
+		<a href="{% url 'select' %}">查詢select</a><br>
+		<a href="{% url 'update' %}">修改update</a><br>
+		<a href="{% url 'delete' %}">刪除delete</a><br>
+	</body>
+</html>

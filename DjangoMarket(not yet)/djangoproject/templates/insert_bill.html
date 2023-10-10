@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<META http-equiv='Content-Type' content='text/html ; charset=utf-8'>
+		<title> 新增insert </title>
+	</head>
+	<body>
+		<h1>帳單資料：</h1>
+		<form action="{% url 'insertdata'%}?type=Bill" method='POST'>
+		<p>商場 : <input type='text' name='retail_name'></p>
+		<p>發票號碼 : <input type='text' name='bill_number'></p>
+		<p>客戶名稱 : <input type='text' name='coutomers'></p>
+		<p>支付類型 : <input type='text' name='payment_type'></p>
+		<p>購買物品 : <textarea name='item_details' rows='4' cols='50'></textarea></p>
+		<p>總金額 : <input type='number' name='total_amount'></p>
+		<input type="submit" value='送出'><br>
+		
+		<hr size='4px' width='100%' color='blue'>
+	
+		<a href="{% url 'index'%}">目錄</a><br>
+		
+	</body>
+</html>

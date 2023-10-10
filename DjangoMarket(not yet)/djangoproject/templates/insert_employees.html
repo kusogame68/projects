@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<META http-equiv='Content-Type' content='text/html ; charset=utf-8'>
+		<title> 新增insert </title>
+	</head>
+	<body>
+		<h1>員工資料：</h1>
+		<form action="{% url 'insertdata'%}?type=Employees" method='POST'>
+		<p>姓氏 : <input required type='text' name='first_name'></p>
+		<p>名子 : <input required type='text' name='last_name'></p>
+		<p>帳號 : <input required type='text' name='account'></p>
+		<p>密碼 : <input required type='password' name='password'></p>
+		<p>學歷 : <input required type='text' name='education'></p>
+		<p>部門 : 
+			<select name='department'>
+				<option value='admin'>行政部門</option>
+				<option value='finance'>財務部門</option>
+				<option value='hr'>人力資源部門</option>
+				<option value='sales'>銷售部門</option>
+				<option value='development'>研發部門</option>
+			</select>
+		</p>
+		<p>站別 : 
+			<select name='position'>
+				<option value='manager'>經理</option>
+				<option value='supervisor'>主管</option>
+				<option value='employee'>員工</option>
+				<option value='intern'>實習生</option>
+				<option value='consultant'>顧問</option>
+			</select>
+		</p>
+		<p>職等 : 
+			<select name='rank'>
+				<option value='1'>1</option>
+				<option value='2'>2</option>
+				<option value='3'>3</option>
+				<option value='4'>4</option>
+				<option value='5'>5</option>
+				<option value='6'>6</option>
+				<option value='7'>7</option>
+				<option value='8'>8</option>
+				<option value='9'>9</option>
+				<option value='10'>10</option>
+			</select>
+		</p>
+		<p>薪水 : <input required type='number' name='salary'></p>
+		<p>到職日 : <input required type='date' name='hire_date'></p>
+		<p>是否在職 : 
+			<select name='is_active'>
+				<option value='yes'>是</option>
+				<option value='no'>否</option>
+			</select>
+		</p>
+		<p>離職日 : <input type='password' name='termination_date'></p>
+		<p>生日 : <input required type='date' name='born'></p>
+		<p>性別 : 
+			<select name='sex'>
+				<option value='male'>男性</option>
+				<option value='female'>女性</option>
+			</select>
+		</p>
+		<p>電話 : <input required type='tel' name='phone_number'></p>
+		<p>E-MAIL : <input required type='email' name='email'></p>
+		<p>國家 : <input required type='text' name='country'></p>
+		<p>城市 : <input required type='text' name='city'></p>
+		<p>地址 : <input required type='text' name='address'></p>
+		<p>備註 : <textarea name='note' style='resize:none'></textarea></p>
+		<input type="submit" value='送出'><br>
+		
+		<hr size='4px' width='100%' color='blue'>
+	
+		<a href="{% url 'index'%}">目錄</a><br>
+		
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<META http-equiv='Content-Type' content='text/html ; charset=utf-8'>
+		<title> 查詢select </title>
+	</head>
+	<body>
+		<p>json格式</p>
+		<form action="{% url 'selectdevid'%}" method='GET'>
+		<h2>請輸入要查詢的"鍵"</h2>
+		<p>要查詢全部資料請輸入"all"<p>
+		<p>鍵 : <input type='text' name='key'></p>
+		<input type="submit" ><br>
+		
+		<hr size='4px' width='100%' color='blue'>
+	
+		<a href="{% url 'index'%}">目錄</a><br>
+		
+	</body>
+</html>

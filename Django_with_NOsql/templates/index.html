@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<META http-equiv='Content-Type' content='text/html ; charset=utf-8'>
+		<title> 首頁 </title>
+	</head>
+	<body>
+		<h2>請選擇動作:</h2>
+		<a href='http://127.0.0.1:8000/index/insert/'>新增insert</a><br>
+		<a href="{% url 'select' %}">查詢select</a><br>
+		<a href="{% url 'update' %}">修改update</a><br>
+		<a href="{% url 'delete' %}">刪除delete</a><br>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<META http-equiv='Content-Type' content='text/html ; charset=utf-8'>
+		<title> 刪除delete </title>
+	</head>
+	<body>
+		<h2>請輸入要刪除的鍵!</h2>
+		<h3>Tips:刪除後將不能復原</h3>
+		<p>要刪除全部資料請輸入"all"<p>
+		<form action="{% url 'deletedevid'%}" method='GET'>
+		<p>鍵 : <input type='text' name='key'></p>
+		<input type="submit" ><br>
+		
+		<hr size='4px' width='100%' color='blue'>
+	
+		<a href="{% url 'index'%}">目錄</a><br>
+		
+	</body>
+</html>

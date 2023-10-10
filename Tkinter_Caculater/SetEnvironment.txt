@@ -1,0 +1,7 @@
+虛擬環境
+Python 3.9.13
+pip install pyinstaller==5.1
+
+pyinstaller -F -w --icon=./Image/com.ico Computer.py
+	-w 不帶控制台
+	--icon=./Image/com.ico 變更exe檔案圖片(路徑可變更)

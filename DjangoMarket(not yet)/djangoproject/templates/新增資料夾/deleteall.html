@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<META http-equiv='Content-Type' content='text/html ; charset=utf-8'>
+		<title> success </title>
+	</head>
+	<body>
+		<h1>已全數刪除</h1>
+		<table border='1'>  
+			<tr>
+				<td>key</td>
+				<td>value</td>
+			</tr>
+			{% for key,item in mydict.items %}
+				<tr>
+					<td>{{key}}</td>
+					<td>{{item}}</td>
+				</tr>
+			{% endfor %}
+		</table>
+		<hr size='4px' width='100%' color='blue'>
+		<a href="{% url 'index'%}">目錄</a><br>
+		<a href="{% url 'insert' %}">新增insert</a><br>
+		<a href="{% url 'select' %}">查詢select</a><br>
+		<a href="{% url 'update' %}">修改update</a><br>
+	</body>
+</html>

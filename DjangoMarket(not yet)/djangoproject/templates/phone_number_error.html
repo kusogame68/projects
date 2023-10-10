@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<META http-equiv='Content-Type' content='text/html ; charset=utf-8'>
+		<title> 404 </title>
+		<style>
+			.tips {
+				background-color:yellow;
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>電話格式錯誤</h1>
+		<span>請輸入有效的電話格式 ! <br>例如：</span>
+		<span class="tips">手機:0912345678、非台北市話:031234567、台北市話:0212345678</span><br>
+		<span class="tips">Tips:</span>
+		<span>請勿使用-符號</span>
+		<hr size='4px' width='100%' color='blue'>
+		<a href="{% url 'insert'%}">返回</a><br>
+		<a href="{% url 'index'%}">目錄</a><br>
+		
+	</body>
+</html>

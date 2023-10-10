@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<META http-equiv='Content-Type' content='text/html ; charset=utf-8'>
+		<title> 新增success </title>
+        {% load static %}
+		<link rel='stylesheet' href="{% static 'style.css' %}">
+	</head>
+	<body>
+		<h1 class='success'>新增成功!</h1>
+		<h1>客戶資料：</h1>
+		{% csrf_token %}
+		<table style="color:blue; border:2px solid black">
+            <tr>
+                <td>姓氏:</td>
+                <td>{{first_name}}</td>
+            </tr>
+
+            <tr>
+                <td>名子:</td>
+                <td>{{last_name}}</td>
+            </tr>
+			
+			<tr>
+                <td>帳號:</td>
+                <td>{{account}}</td>
+            </tr>
+			
+			<tr>
+                <td>密碼:</td>
+                <td>{{password}}</td>
+            </tr>
+			
+			<tr>
+                <td>生日:</td>
+                <td>{{born}}</td>
+            </tr>
+			
+			<tr>
+                <td>性別:</td>
+                <td>{{sex}}</td>
+            </tr>
+			
+			<tr>
+                <td>電話:</td>
+                <td>{{phone_number}}</td>
+            </tr>
+			
+			<tr>
+                <td>E-MAIL:</td>
+                <td>{{email}}</td>
+            </tr>
+			
+			<tr>
+                <td>國家</td>
+                <td>{{country}}</td>
+            </tr>
+			
+			<tr>
+                <td>城市:</td>
+                <td>{{city}}</td>
+            </tr>
+			
+			<tr>
+                <td>地址:</td>
+                <td>{{address}}</td>
+            </tr>
+			
+			<tr>
+                <td>備註:</td>
+                <td>{{note}}</td>
+            </tr>
+        </table>
+
+		<hr size='4px' width='100%' color='blue'>
+        <a href="{% url 'insertdata_customers_again'%}">繼續新增Customer</a><br>
+		<a href="{% url 'index'%}">目錄</a><br>
+		
+	</body>
+</html>

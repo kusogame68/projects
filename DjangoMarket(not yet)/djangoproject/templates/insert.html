@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<META http-equiv='Content-Type' content='text/html ; charset=utf-8'>
+		<title> 新增insert </title>
+	</head>
+	<body>
+		<p>Insert as?</p>
+		<form action="{% url 'insertoption'%}" method='POST'>
+		{% csrf_token %}
+			<select name='database'>
+				<option value=''> --請選擇要新增的資料-- </option>
+				<option value='Customers'> 客戶 </option>
+				<option value='Employees'> 員工 </option>
+				<option value='Products'> 產品 </option>
+				<option value='Bill'> 帳單 </option>
+			</select>
+		<input type="submit" value='送出'><br>
+		
+		<hr size='4px' width='100%' color='blue'>
+	
+		<a href="{% url 'index'%}">目錄</a><br>
+		
+	</body>
+</html>

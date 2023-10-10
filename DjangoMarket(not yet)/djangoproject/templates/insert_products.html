@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<META http-equiv='Content-Type' content='text/html ; charset=utf-8'>
+		<title> 新增insert </title>
+	</head>
+	<body>
+		<h1>產品資料：</h1>
+		<form action="{% url 'insertdata'%}?type=Products" method='POST'>
+		<p>產品名稱 : <input required type='text' name='product_name'></p>
+		<p>產品類別 : 
+			  <select name='category'>
+				<option value='drinks'>飲品</option>
+				<option value='food'>食品</option>
+				<option value='desserts'>甜點</option>
+				<option value='snacks'>零食</option>
+				<option value='household'>家居用品</option>
+				<option value='electronics'>電子產品</option>
+				<option value='clothing'>服飾</option>
+				<option value='health'>保健品</option>
+				<option value='beauty'>美妝</option>
+				<option value='stationery'>文具</option>
+			  </select>
+		</p>
+		<p>販售價格 : <input required type='number' name='price'></p>
+		<p>數量 : <input required type='number' name='quantity'></p>
+		<p>庫存 : <input required type='number' name='stock'></p>
+		<p>製造日期 : <input required type='date' name='manufacturing_date'></p>
+		<p>有效期限 : <input required type='date' name='expiration_date'></p>
+		<p>供應商 : <input type='text' name='supplier'></p>
+		<p>製造地點 : <input required type='text' name='manufacturing_location'></p>
+		<p>品牌 : <input required type='text' name='brand'></p>
+		<input type="submit" value='送出'><br>
+		
+		<hr size='4px' width='100%' color='blue'>
+	
+		<a href="{% url 'index'%}">目錄</a><br>
+		
+	</body>
+</html>
